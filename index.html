@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 	<head>
 		<title>Hangman... in SPACE</title>
-		<!--add Bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 		<!--add stylesheet-->
-		<!--add external js?-->
 	</head>
 	<body>
-		<div>Hangman... in SPACE</div>
-		<div>
-			<!--main content here-->
-			<p id="status-text">Press any key to start!</p>
+		<div class="container">
+			<div class="jumbotron">Hangman... in SPACE</div>
+			<div class="row">
+				<!--main content here-->
+				<div class="col-md-6">
+					<p id="status-text">Press any key to start!</p>
+					<h3>Wins: <a id="wincount">0</a></h3>
+					<h3>Guesses remaining: <a id="guesses">12</a></h3>
+				</div>
+				<div class="col-md-6">
+					<h3>Current Word:</h3>
+					<ul id="blanksList"></ul>
+					<h3>Letters already guessed:</h3>
+					<ul id="guessed">
+						<!--list of letters guessed-->
+					</ul>
+				</div>
+			</div>
 		</div>
+	<script src="hangman.js"></script>
 	</body>
 </html>
