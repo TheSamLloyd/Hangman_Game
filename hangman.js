@@ -1,4 +1,4 @@
-var wordlist = ["astronaut", "space", "moon", "planet","antimatter","asteroid","meteor","mars","constellation","star"];
+var wordlist = ["astronaut", "space", "moon", "planet","antimatter","asteroid","meteor","mars","constellation","star","interstellar","supernova","galaxy","neptune","andromeda","nebula","jupiter","astronomical","telescope"];
 var letters = "abcdefghijklmnopqrstuvwxyz";
 var wins = 0;
 function gameStart(){
