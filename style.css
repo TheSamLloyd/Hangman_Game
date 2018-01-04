@@ -1,0 +1,11 @@
+li{
+	display:inline-block;
+	margin: 0px 6px;
+}
+body{
+	background: url('bg.jpg') #000;
+	color:white;
+}
+.col-md-6{
+	background-color:rgba(0,0,0,.7);
+}
