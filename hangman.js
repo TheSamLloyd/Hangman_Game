@@ -4,11 +4,12 @@ var wins = 0;
 function gameStart(){
 	this.guesses=12;
 	this.attempts=[];
-// steps:
-// generate a random word from a list
 	this.secretword=wordlist[Math.floor(Math.random()*wordlist.length)];
-// listen for keypresses
 		var blankDiv = document.getElementById("blanksList");
+		blankDiv.innerHTML = "";
+		document.getElementById("guessed").innerHTML="";
+		document.getElementById("guesses").innerHTML="12";
+		document.getElementById("status-text").innerText="Press any key to start!"
 	for (var i=0;i<this.secretword.length;i++){
 		var newBlank=document.createElement("li");
 		newBlank.innerHTML="_";
@@ -56,7 +57,6 @@ document.addEventListener("keydown",function(){
 		document.getElementById("wincount").innerHTML=++wins;
 	}
 })
-function restart(){
-	game = gameStart();
-	
-}
+document.getElementById("restart").addEventListener("click",function(){
+	game= new gameStart();
+});
